@@ -121,4 +121,7 @@ vnoremap <leader>h :s/:\([^ ]*\)\(\s*\)=>/\1:/g<CR>
 nnoremap <leader>q :s/"/'/g<CR>
 vnoremap <leader>q :s/"/'/g<CR>
 
+nnoremap <leader>b :%!xxd<CR>
+nnoremap <leader>B :%!xxd -r<CR>
+
 execute pathogen#infect()
