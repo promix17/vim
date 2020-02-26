@@ -80,6 +80,7 @@ nnoremap <silent> <F3> :%s/\s\+$//<CR>:let @/=''<CR>
 nnoremap <silent> <F4> :retab<CR>
 nnoremap <silent> <F5> :match Error /\t/<CR>
 
+set wildignore+=*/coverage/**
 set wildignore+=*/vendor/**
 " Smart search
 function! Find(word)
