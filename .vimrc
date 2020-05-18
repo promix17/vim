@@ -82,6 +82,8 @@ nnoremap <silent> <F5> :match Error /\t/<CR>
 
 set wildignore+=*/coverage/**
 set wildignore+=*/vendor/**
+set wildignore+=*/tmp/**
+set wildignore+=*/log/**
 " Smart search
 function! Find(word)
   tabnew
