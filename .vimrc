@@ -128,4 +128,15 @@ vnoremap <leader>q :s/"/'/g<CR>
 nnoremap <leader>b :%!xxd<CR>
 nnoremap <leader>B :%!xxd -r<CR>
 
+function! RubyExec()
+  w
+  silent !ruby % > .vim.tmp.out
+  tabnew
+  r .vim.tmp.out
+  silent !rm .vim.tmp.out
+  redraw!
+endfunction
+
+nnoremap <leader>r :call RubyExec()<CR>ggdd<CR>
+
 execute pathogen#infect()
