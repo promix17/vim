@@ -63,6 +63,7 @@ autocmd FileType groovy setlocal shiftwidth=4 tabstop=4 expandtab
 autocmd FileType c      setlocal shiftwidth=4 tabstop=4 expandtab
 autocmd FileType cpp    setlocal shiftwidth=4 tabstop=4 expandtab
 autocmd FileType go     setlocal shiftwidth=4 tabstop=4 softtabstop=0 noexpandtab
+autocmd FileType markdown setlocal wrap linebreak
 
 nnoremap <leader><CR> a<CR><Esc>
 
